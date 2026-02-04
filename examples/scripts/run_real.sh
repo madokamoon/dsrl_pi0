@@ -2,7 +2,8 @@
 proj_name=DSRL_pi0_FrankaDroid
 device_id=0
 
-export EXP=./logs/$proj_name; 
+export PYTHONPATH=.:$PYTHONPATH
+export EXP=./logs/$proj_name;
 export CUDA_VISIBLE_DEVICES=$device_id
 export XLA_PYTHON_CLIENT_PREALLOCATE=false
 
